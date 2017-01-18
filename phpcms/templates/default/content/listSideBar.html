@@ -1,0 +1,9 @@
+{pc:content action="category" catid="$parentid" num="25" siteid="$siteid" order="listorder ASC"}
+<div class="list_left">
+    <ul>
+    	{loop $data $r}
+        <li><a class="list_left_a" href="{$r[url]}"><span class="lo">{$r[catname]}</span></a></li>
+        {/loop}
+    </ul>
+</div>
+{/pc}

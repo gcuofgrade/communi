@@ -1,0 +1,17 @@
+{template "content","header"}
+<!--content开始 -->
+<div id="content">
+            <div class="list_top">
+                <img src="{IMG_PATH}home.png" alt="" />
+                <span><a href="{siteurl($siteid)}">首页</a>>><a href="">{catpos($catid)}内容</a></span>
+            </div>
+            <div id="neirong" style="margin-bottom:20px;">
+                <div class="yi">
+                    <div class="shang">
+                        <p>{$title}</p>
+                    </div>
+                    <div class="cou">{$content}</div>
+                </div>
+            </div>
+        </div>
+{template "content","footer"}

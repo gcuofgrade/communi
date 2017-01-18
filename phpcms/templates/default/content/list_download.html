@@ -1,0 +1,105 @@
+{template "content","header"}
+<div id="content">
+    <div class="list_top">
+        <img src="{IMG_PATH}home.png" alt="" />
+        <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
+    </div>
+    <div class="list_bottom">
+        <div style="margin-top:0" class="waiji">
+            <img src="{$CATEGORYS[32][image]}" alt="" />
+            <span class="wai_background">留学类别</span>
+            <span class="wai_tu"></span>
+
+            {pc:content action="lists" catid="32" num="3" order="inputtime DESC" page="$page"}
+            <div class="lai_content">
+                {loop $data $r}
+                <div class="liuxue">
+                    <a title="{$r[title]}" href="{$r[url]}">{$r[title]}</a>
+                </div>
+                {/loop}
+            </div>
+            {/pc}
+
+        </div>
+        <div class="waiji" >
+            <img src="{$CATEGORYS[33][image]}" alt="" />
+            <span class="wai_background2">招生信息</span>
+            <span class="wai_tu2"></span>
+
+            {pc:content action="lists" catid="33" num="3" order="inputtime DESC" page="$page"}
+            <div class="lai_content">
+                {loop $data $r}
+                <div class="liuxue">
+                    <a title="{$r[title]}" href="{$r[url]}">{$r[title]}</a>
+                </div>
+                {/loop}
+            </div>
+            {/pc}
+        </div>
+        <div class="waiji" >
+            <img src="{$CATEGORYS[34][image]}" alt="" />
+            <span class="wai_background3">日常管理</span>
+            <span class="wai_tu3"></span>
+
+            {pc:content action="lists" catid="34" num="5" order="inputtime DESC" page="$page"}
+            <div class="lai_content">
+                {loop $data $r}
+                <div class="liuxue2">
+                    <a title="{$r[title]}" href="{$r[url]}">{$r[title]}</a>
+                </div>
+                {/loop}
+            </div>
+            {/pc}
+        </div>
+        <div class="waiji">
+            <img src="{$CATEGORYS[35][image]}" alt="" />
+            <span style="width:100px;" class="wai_background4">来华留学奖学金</span>
+            <span style="left:100px;" class="wai_tu4"></span>
+            <div class="lai_content">
+                <div style="height:60px" class="liuxue3">
+                    <a style="line-height:72px;" title="广东省政府来粤留学生奖学金管理暂行办法" href="{APP_PATH}index.php?m=content&c=index&a=show&catid=35&id=21">广东省政府来粤留学生奖学金管理暂行办法</a>
+                </div>
+                <div style="border:none;margin-top:12px;" class="liuxue3">
+                    <a title="" href="{APP_PATH}index.php?m=content&c=index&a=show&catid=35&id=22"><p>广东省政府来粤留学生奖学金申请表(一)</p><p>GUANGDONG GOVERNMENT OUTSTANDING INTERNATIONAL STUDENT SCHOLARSHIP APPLICATION FORM</p></a>
+                </div>
+            </div>
+        </div>
+
+
+        {pc:content action="category" catid="$parentid" num="25" siteid="$siteid" order="listorder ASC"}
+        <div class="list_left">
+            <ul>
+                <?php $i=0;?>
+                {loop $data $r}
+                <li><a class="list_left_a" href="#"><span class="lo">{$r[catname]}</span></a></li>
+                {/loop}
+            </ul>
+        </div>
+        {/pc}
+
+
+    </div>
+</div>
+
+<script>
+    $(function(){
+
+        inReadBar();
+
+        $(".list_left_a").mouseover(function(){
+            $(".list_left_a").removeClass("sideBar_a_acitve");
+        }).mouseout(function(){
+            //alert("aaa");
+            //outReadBar();
+        });
+        
+        $(".list_left_a").click(function(){
+            var index = $(".list_left_a").index(this);
+            $(".list_left_a").removeClass("sideBar_a_acitve");
+            $(".box-shadow").removeClass("box-shadow");
+            $(".waiji").eq(index).addClass("box-shadow");
+            $(".list_left_a").eq(index).addClass("sideBar_a_acitve");
+        })
+    });
+</script>
+{template "content","footer"}

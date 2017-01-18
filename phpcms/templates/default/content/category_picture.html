@@ -1,0 +1,39 @@
+{template "content","header"}
+<!--main-->
+<div id="content">
+            <div class="list_top">
+                <img src="{IMG_PATH}home.png" alt="" />
+                <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
+            </div>
+            <div class="list_bottom">
+            {pc:content action="category" catid="$catid" num="6" siteid="$siteid" order="listorder ASC"}
+                <div class="list_content">
+                    <div>
+                        {loop $data $r}
+                        <a title="{$r[title]}" href="{$r[url]}">
+                            <div class="information">
+                                <img src="{thumb($r[image])}" alt="" />
+                                <p class="information_title">{$r[catname]}</p>
+                                <div class="country_content">
+                                    <p>{$r['description']}</p>
+                                </div>
+                                <div class="list_more">
+                                    <a title="相关资讯" href="{$r[url]}">相关资讯 >></a>
+                                </div>
+                            </div>
+                        </a>
+                        {/loop}
+                    </div>
+                    <div class="ye">{$pages}</div>
+                    
+                </div>
+            {/pc}
+            {template "content","listSideBar"}
+            </div>
+        </div>
+        <script>
+            $(function(){
+                readBar();
+            })
+        </script>
+{template "content","footer"}

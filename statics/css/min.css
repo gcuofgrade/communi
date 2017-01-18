@@ -1,0 +1,34 @@
+@charset "utf-8";
+.box-shadow{
+	box-shadow: 0 2px 14px #666;
+}
+.onclickSideBar{
+	color: #fff;
+	font-weight: bolder;
+}
+.sideBar_a_acitve{
+	color:#fff;
+	font-weight: bolder;;
+	background:#236fb7;
+}
+.sideBar_li_active{
+	background: #236fb7;
+}
+.sideBar_a_acitve span{
+	color: #fff;
+}
+.clearfix{
+	overflow: hidden;
+	_height:1%;
+}
+.lai_content .liuxue:last-child,.lai_content .liuxue2:last-child{
+	border: none;
+}
+#main_bc{
+	width: 1050px;
+	margin: 0 auto;
+	background-color: #F1F8FB;
+}
+#main_bc_buttom{
+	background: url(../images/bcg_bottom.png) no-repeat bottom;
+}

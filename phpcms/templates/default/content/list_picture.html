@@ -1,0 +1,28 @@
+{template "content","header"}
+<!--main-->
+<div id="content">
+            <div class="list_top">
+                <img src="{IMG_PATH}home.png" alt="" />
+                <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
+            </div>
+            <div id="list">
+                <div class="list_li">
+                    <div class="xi">
+                        <p>动态</p>
+                    </div>
+                    <div class="shuang">
+                    {pc:content action="lists" catid="$catid" num="20" order="id DESC" page="$page"}
+                        <ul>
+                        {loop $data $r}
+                            <li>
+                                <a href="{$r[url]}"><span class='hong'>{$r[title]}</span><span class='mei'>{date('m-d',$r['inputtime'])}</span></a>
+                            </li>
+                        {/loop}
+                        </ul>
+                    {/pc}
+                    </div>
+                    <div class="ye">{$pages}</div>
+                </div>
+            </div>
+        </div>
+{template "content","footer"}
