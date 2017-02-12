@@ -381,3 +381,71 @@
 <?php exit;?>01-13 14:22:19 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
 <?php exit;?>01-13 14:22:19 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
 <?php exit;?>01-13 23:24:27 | 2 | chmod(): 不允许的操作    | phpcms/modules/content/classes/html.class.php | 364
+<?php exit;?>02-01 12:20:44 | 2 | chmod(): 不允许的操作    | phpcms/modules/content/classes/html.class.php | 364
+<?php exit;?>02-01 12:21:54 | 2 | chmod(): 不允许的操作    | phpcms/modules/content/classes/html.class.php | 364
+<?php exit;?>02-01 12:21:57 | 2 | file_put_contents(/home/xiaomin/work/libmill/communi/caches/caches_content/caches_data/update_url_catid-1-1.cache.php): failed to open stream: 权限不够 | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>02-01 12:22:39 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>02-01 12:22:39 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>02-01 12:22:39 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>02-01 12:22:39 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>02-01 12:22:41 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>02-01 12:22:41 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>02-01 12:22:41 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>02-01 12:22:41 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>02-01 12:22:45 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>02-01 12:22:45 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>02-01 12:22:45 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>02-01 12:22:45 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/category_picture.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/category_video.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/footer.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/header.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/index.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/list_download.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/list.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/list_picture.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/listSideBar.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/page.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/show.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:22:47 | 2 | rmdir(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/): 权限不够 | phpcms/libs/functions/dir.func.php | 154
+<?php exit;?>02-01 12:22:47 | 2 | rmdir(/home/xiaomin/work/libmill/communi/caches/caches_template/default/): 目录非空 | phpcms/libs/functions/dir.func.php | 154
+<?php exit;?>02-01 12:37:01 | 2 | chmod(): 不允许的操作    | phpcms/modules/content/classes/html.class.php | 364
+<?php exit;?>02-01 12:37:50 | 2 | chmod(): 不允许的操作    | phpcms/modules/content/classes/html.class.php | 364
+<?php exit;?>02-01 12:37:55 | 2 | file_put_contents(/home/xiaomin/work/libmill/communi/caches/caches_content/caches_data/update_url_catid-1-1.cache.php): failed to open stream: 权限不够 | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>02-01 12:38:37 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>02-01 12:38:37 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>02-01 12:38:37 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>02-01 12:38:37 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>02-01 12:38:39 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>02-01 12:38:39 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>02-01 12:38:39 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>02-01 12:38:39 | 2 | chmod(): 不允许的操作    | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>02-01 12:38:42 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>02-01 12:38:42 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>02-01 12:38:42 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>02-01 12:38:42 | 2 | chmod(): 不允许的操作    | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/category_picture.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/category_video.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/footer.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/header.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/index.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/list_download.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/list.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/list_picture.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/listSideBar.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/page.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | unlink(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/show.php): 权限不够 | phpcms/libs/functions/dir.func.php | 152
+<?php exit;?>02-01 12:38:43 | 2 | rmdir(/home/xiaomin/work/libmill/communi/caches/caches_template/default/content/): 权限不够 | phpcms/libs/functions/dir.func.php | 154
+<?php exit;?>02-01 12:38:43 | 2 | rmdir(/home/xiaomin/work/libmill/communi/caches/caches_template/default/): 目录非空 | phpcms/libs/functions/dir.func.php | 154
+<?php exit;?>02-08 22:51:59 | 2 | mysqli::__construct(): (HY000/1698): Access denied for user 'root'@'localhost' | phpcms/libs/classes/db_mysqli.class.php | 55
+<?php exit;?>02-08 22:51:59 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 390
+<?php exit;?>02-08 22:51:59 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 397
+<?php exit;?>02-08 22:51:59 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 397
+<?php exit;?>02-08 22:51:59 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 390
+<?php exit;?>02-08 22:51:59 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 409
+<?php exit;?>02-09 11:56:15 | 2 | mysqli::__construct(): (HY000/1698): Access denied for user 'root'@'localhost' | phpcms/libs/classes/db_mysqli.class.php | 55
+<?php exit;?>02-09 11:56:15 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 390
+<?php exit;?>02-09 11:56:15 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 397
+<?php exit;?>02-09 11:56:15 | 2 | db_mysqli::errno(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 397
+<?php exit;?>02-09 11:56:15 | 2 | db_mysqli::error(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 390
+<?php exit;?>02-09 11:56:15 | 2 | mysqli::close(): Couldn't fetch mysqli | phpcms/libs/classes/db_mysqli.class.php | 409
