@@ -22,8 +22,8 @@ background-image: url(../images/6.png);
 background-image: url(../images/7.png);
 background-image: url(../images/8.png);
 background-image: url(../images/9.png);
-width: 0px;
-height: 0px;
+width: 0;
+height: 0;
 display: inline;
 }
 #main{
@@ -95,7 +95,7 @@ display: inline;
 #nav ul li ul li {
     width:150px;
      float:none;
-     margin-left: 0px;
+     margin-left: 0;
  }
  #nav ul li ul :hover{
     background: #24a3ea;
@@ -129,9 +129,9 @@ display: inline;
 #focus_Box li{
     z-index:0;
     position:absolute; 
-    width:0px;
+    width:0;
     background:#787878;
-    height:0px;
+    height:0;
     top:146px;
     cursor:pointer;
     left:377px;
@@ -152,9 +152,9 @@ display: inline;
     font-size:19px;
 }
 #focus_Box li p::after{
-    width: 0px;
-    height: 0px;
-    font-size: 0px;
+    width: 0;
+    height: 0;
+    font-size: 0;
     position: absolute;
     border-left:21px solid #700a0b;
     border-top:12px solid #700a0b;
@@ -231,7 +231,7 @@ display: inline;
     height: 400px;
     width: 100%;
     background: #def1fa;
-    box-shadow: #888 0px 2px 7px ;
+    box-shadow: #888 0 2px 7px ;
 }
 .notice_bottom li{
     width: 98%;
@@ -395,7 +395,7 @@ display: inline;
     border-bottom: 5px solid #2172c5;
 }
 .content-bottom a .liu:hover{
-    box-shadow: #888 0px 2px 7px ;
+    box-shadow: #888 0 2px 7px ;
 }
 .liu{
     width: 92px;
@@ -434,11 +434,10 @@ display: inline;
 }
 .select{
     background: none;
-    border:1px solid #5d5d5e;width:auto;height:33px;text-align:center;
+    border:1px solid #5d5d5e;text-align:center;
     width: 186px;
     font-family:"宋体";
     font-size:15px;
-    padding:8px 0;
     height:25px; 
     line-height:20px; 
     padding:2px 0;
@@ -449,15 +448,15 @@ display: inline;
     text-align: center;
 }
 #foot{
-    height:60px;
+    height:50px;
     width: 100%;
     background: #2baefe;
-    text-align: center; 
+    text-align: center;
+    padding-top :10px;
 }
 .last{
-    margin: 20px auto;
+    margin: 0 auto;
     width: 760px;
-    height: 25px;
     font-size: 10px;
     font-weight: bolder;
     color: #deedfb; 
@@ -643,7 +642,7 @@ text-overflow:ellipsis;
     float: left;
 }
 .waiji img:hover{
-	box-shadow: 0px 2px 15px #888888;
+	box-shadow: 0 2px 15px #888888;
 }
 .wai_background{
     display:block;
@@ -669,7 +668,7 @@ text-overflow:ellipsis;
     font-weight: bolder;
     color: #fafdfe;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 115px;
     background: #f38244;
     
@@ -684,7 +683,7 @@ text-overflow:ellipsis;
     font-weight: bolder;
     color: #fafdfe;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 115px;
     background: #7fe35d;
     
@@ -699,7 +698,7 @@ text-overflow:ellipsis;
     font-weight: bolder;
     color: #fafdfe;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 115px;
     background: #dd3646;
 }
