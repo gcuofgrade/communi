@@ -2,7 +2,7 @@
 return array (
   1 => 
   array (
-    'is_post' => '1',
+    'is_post' => '0',
     'enablecheckcode' => '0',
   ),
 );

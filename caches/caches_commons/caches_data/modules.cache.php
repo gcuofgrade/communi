@@ -253,13 +253,7 @@ return array (
     'iscore' => '0',
     'version' => '1.0',
     'description' => '',
-    'setting' => 'array (
-  1 => 
-  array (
-    \'is_post\' => \'1\',
-    \'enablecheckcode\' => \'0\',
-  ),
-)',
+    'setting' => '{"1":{"is_post":"0","enablecheckcode":"0"}}',
     'listorder' => '0',
     'disabled' => '0',
     'installdate' => '2010-09-06',

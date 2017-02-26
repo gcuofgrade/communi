@@ -37,3 +37,5 @@ caches/configs/database.php
 将删除 caches/error_log.php
 将删除 index.html
 将删除 uploadfile/2016/1225/
+将删除 .idea/communi.iml
+将删除 uploadfile/2017/0225/

@@ -80,72 +80,47 @@
     </div>
     <div class="content-bottom-lo">
         <div class="partner">
-            <p>合作伙伴</p>
+            <p>合作院校</p>
         </div>
 
         <div id="demo">
             <div id="indemo">
-                <div id="demo1">
-                    <a href="#"><img src="<?php echo IMG_PATH;?>1.png" alt="#" /></a>
-                    <a href="#"><img src="<?php echo IMG_PATH;?>2.png" alt="#" /></a>
-                    <a href="#"><img src="<?php echo IMG_PATH;?>3.png" alt="#" /></a>
-                    <a href="#"><img src="<?php echo IMG_PATH;?>4.png" alt="#" /></a>
-                    <a href="#"><img src="<?php echo IMG_PATH;?>5.png" alt="#" /></a>
-                    <a href="#"><img src="<?php echo IMG_PATH;?>6.png" alt="#" /></a>
-                    <a href="#"><img src="<?php echo IMG_PATH;?>7.png" alt="#" /></a>
-                    <a href="#"><img src="<?php echo IMG_PATH;?>8.png" alt="#" /></a>
-                    <a href="#"><img src="<?php echo IMG_PATH;?>9.png" alt="#" /></a>
-                </div>
+                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"link\" data=\"op=link&tag_md5=963adb2d378a8804abd60cd7dbfff7f5&action=type_list&typeid=56&siteid=%24siteid&linktype=1&order=listorder+DESC&num=8&return=pic_link\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$link_tag = pc_base::load_app_class("link_tag", "link");if (method_exists($link_tag, 'type_list')) {$pic_link = $link_tag->type_list(array('typeid'=>'56','siteid'=>$siteid,'linktype'=>'1','order'=>'listorder DESC','limit'=>'8',));}?>
+                    <div id="demo1">
+                        <?php $n=1;if(is_array($pic_link)) foreach($pic_link AS $v) { ?>
+                            <a href="<?php echo $v['url'];?>" target="_blank"><img src="<?php echo $v['logo'];?>" alt="<?php echo $v['name'];?>" /></a>
+                        <?php $n++;}unset($n); ?>
+                    </div>
+                <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                 <div id="demo2"></div>
             </div>
         </div>
     </div>
-    <div id="select">
-        <select class="select">
-            <option selected="selected">-------教学单位------</option>
-            <option value="">汽车与交通工程学院</option>
-            <option value="">机械工程学院</option>
-            <option value="">电子信息工程学院</option>
-            <option value="">电气工程学院</option>
-            <option value="">计算机工程学院</option>
-            <option value="">经济学院</option>
-            <option value="">管理学院</option>
-            <option value="">外国语学院</option>
-            <option value="">珠宝学院</option>
-            <option value="">建筑学院</option>
-            <option value="">土木工程学院</option>
-            <option value="">国际商学院</option>
-            <option value="">中兴通信工程学院</option>
-            <option value="">国际工程学院</option>
+    <div id="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"link\" data=\"op=link&tag_md5=bf33a0a3b3174ab83d48245152e1fe2f&action=type_list&typeid=53&siteid=%24siteid&order=listorder+DESC&num=20&return=dat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$link_tag = pc_base::load_app_class("link_tag", "link");if (method_exists($link_tag, 'type_list')) {$dat = $link_tag->type_list(array('typeid'=>'53','siteid'=>$siteid,'order'=>'listorder DESC','limit'=>'20',));}?>
+        <select class="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
+            <option selected="selected">-------教学单位-------</option>
+            <?php $n=1;if(is_array($dat)) foreach($dat AS $v) { ?>
+                <option value="<?php echo $v['url'];?>"><?php echo $v['name'];?></option>
+            <?php $n++;}unset($n); ?>
         </select>
-        <select class="select">
-            <option selected="selected">-------职能部门------</option>
-            <option value="">学校办公室</option>
-            <option value="">教务处</option>
-            <option value="">学生处</option>
-            <option value="">学校团委</option>
-            <option value="">人事处</option>
-            <option value="">后勤处</option>
-            <option value="">财务处</option>
-            <option value="">图书馆</option>
-            <option value="">招生处</option>
-            <option value="">体育部</option>
-            <option value="">学生就业指导中心</option>
-            <option value="">思想政治理论课教学部</option>
-            <option value="">继续教育与培训中心</option>
-            <option value="">国际教育与交流中心</option>
-            <option value="">网络与信息中心</option>
-            <option value="">工程研究院</option>
-            <option value="">科研处</option>
-            <option value="">采报中心</option>
-            <option value="">心理中心</option>
+        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"link\" data=\"op=link&tag_md5=53ab21d715c70eb22fc858028c6e65dc&action=type_list&typeid=54&siteid=%24siteid&order=listorder+DESC&num=20&return=dat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$link_tag = pc_base::load_app_class("link_tag", "link");if (method_exists($link_tag, 'type_list')) {$dat = $link_tag->type_list(array('typeid'=>'54','siteid'=>$siteid,'order'=>'listorder DESC','limit'=>'20',));}?>
+        <select class="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
+            <option selected="selected">-------职能部门-------</option>
+            <?php $n=1;if(is_array($dat)) foreach($dat AS $v) { ?>
+                <option value="<?php echo $v['url'];?>"><?php echo $v['name'];?></option>
+            <?php $n++;}unset($n); ?>
         </select>
-        <select class="select">
-            <option selected="selected">-------友情链接------</option>
+        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"link\" data=\"op=link&tag_md5=ac9797e310576764ef81b6245d5c32f2&action=type_list&typeid=55&siteid=%24siteid&order=listorder+DESC&num=20&return=dat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$link_tag = pc_base::load_app_class("link_tag", "link");if (method_exists($link_tag, 'type_list')) {$dat = $link_tag->type_list(array('typeid'=>'55','siteid'=>$siteid,'order'=>'listorder DESC','limit'=>'20',));}?>
+        <select class="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
+            <option selected="selected">-------友情链接-------</option>
             <option value="">教育部涉外监管信息网</option>
-            <option value="">教育部留学服务中心</option>
-            <option value="">广东省外国专家局</option>
         </select>
+        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
     </div>
 </div>
 <?php include template("content","footer"); ?>

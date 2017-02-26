@@ -80,72 +80,47 @@
     </div>
     <div class="content-bottom-lo">
         <div class="partner">
-            <p>合作伙伴</p>
+            <p>合作院校</p>
         </div>
 
         <div id="demo">
             <div id="indemo">
-                <div id="demo1">
-                    <a href="#"><img src="{IMG_PATH}1.png" alt="#" /></a>
-                    <a href="#"><img src="{IMG_PATH}2.png" alt="#" /></a>
-                    <a href="#"><img src="{IMG_PATH}3.png" alt="#" /></a>
-                    <a href="#"><img src="{IMG_PATH}4.png" alt="#" /></a>
-                    <a href="#"><img src="{IMG_PATH}5.png" alt="#" /></a>
-                    <a href="#"><img src="{IMG_PATH}6.png" alt="#" /></a>
-                    <a href="#"><img src="{IMG_PATH}7.png" alt="#" /></a>
-                    <a href="#"><img src="{IMG_PATH}8.png" alt="#" /></a>
-                    <a href="#"><img src="{IMG_PATH}9.png" alt="#" /></a>
-                </div>
+                {pc:link  action="type_list" typeid="56" siteid="$siteid" linktype="1" order="listorder DESC" num="8" return="pic_link"}
+                    <div id="demo1">
+                        {loop $pic_link $v}
+                            <a href="{$v['url']}" target="_blank"><img src="{$v[logo]}" alt="{$v['name']}" /></a>
+                        {/loop}
+                    </div>
+                {/pc}
                 <div id="demo2"></div>
             </div>
         </div>
     </div>
-    <div id="select">
-        <select class="select">
-            <option selected="selected">-------教学单位------</option>
-            <option value="">汽车与交通工程学院</option>
-            <option value="">机械工程学院</option>
-            <option value="">电子信息工程学院</option>
-            <option value="">电气工程学院</option>
-            <option value="">计算机工程学院</option>
-            <option value="">经济学院</option>
-            <option value="">管理学院</option>
-            <option value="">外国语学院</option>
-            <option value="">珠宝学院</option>
-            <option value="">建筑学院</option>
-            <option value="">土木工程学院</option>
-            <option value="">国际商学院</option>
-            <option value="">中兴通信工程学院</option>
-            <option value="">国际工程学院</option>
+    <div id="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
+        {pc:link  action="type_list" typeid="53"  siteid="$siteid" order="listorder DESC" num="20" return="dat"}
+        <select class="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
+            <option selected="selected">-------教学单位-------</option>
+            {loop $dat $v}
+                <option value="{$v[url]}">{$v[name]}</option>
+            {/loop}
         </select>
-        <select class="select">
-            <option selected="selected">-------职能部门------</option>
-            <option value="">学校办公室</option>
-            <option value="">教务处</option>
-            <option value="">学生处</option>
-            <option value="">学校团委</option>
-            <option value="">人事处</option>
-            <option value="">后勤处</option>
-            <option value="">财务处</option>
-            <option value="">图书馆</option>
-            <option value="">招生处</option>
-            <option value="">体育部</option>
-            <option value="">学生就业指导中心</option>
-            <option value="">思想政治理论课教学部</option>
-            <option value="">继续教育与培训中心</option>
-            <option value="">国际教育与交流中心</option>
-            <option value="">网络与信息中心</option>
-            <option value="">工程研究院</option>
-            <option value="">科研处</option>
-            <option value="">采报中心</option>
-            <option value="">心理中心</option>
+        {/pc}
+
+        {pc:link  action="type_list" typeid="54"  siteid="$siteid" order="listorder DESC" num="20" return="dat"}
+        <select class="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
+            <option selected="selected">-------职能部门-------</option>
+            {loop $dat $v}
+                <option value="{$v[url]}">{$v[name]}</option>
+            {/loop}
         </select>
-        <select class="select">
-            <option selected="selected">-------友情链接------</option>
+        {/pc}
+
+        {pc:link  action="type_list" typeid="55"  siteid="$siteid" order="listorder DESC" num="20" return="dat"}
+        <select class="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
+            <option selected="selected">-------友情链接-------</option>
             <option value="">教育部涉外监管信息网</option>
-            <option value="">教育部留学服务中心</option>
-            <option value="">广东省外国专家局</option>
         </select>
+        {/pc}
     </div>
 </div>
 {template "content","footer"}
