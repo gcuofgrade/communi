@@ -71,11 +71,11 @@
         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
     </div>
     <div class="content-bottom">
-        <a href="#"><div style="margin-left:50px;" class="liu"></div></a>
-        <a href="#"><div style="background-position:-116px 0" class="liu"></div></a>
-        <a href="#"><div style="background-position:-235px 0" class="liu"></div></a>
-        <a href="#"><div style="background-position:-354px 0" class="liu"></div></a>
-        <a href="#"><div style="background-position:-475px 0" class="liu"></div></a>
+        <a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=87"><div style="margin-left:50px;" class="liu"></div></a>
+        <a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=88"><div style="background-position:-116px 0" class="liu"></div></a>
+        <a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=89"><div style="background-position:-235px 0" class="liu"></div></a>
+        <a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=90"><div style="background-position:-354px 0" class="liu"></div></a>
+        <a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=91"><div style="background-position:-475px 0" class="liu"></div></a>
         <a href="#"><div class="liu"></div></a>
     </div>
     <div class="content-bottom-lo">
