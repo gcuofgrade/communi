@@ -47,74 +47,87 @@
                 <ul>
                     <li style="width:55px;"><a href="<?php echo APP_PATH;?>">首页</a></li>
                     <li>
-                        <a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=19">机构介绍</a>
+                        <a href="#">机构介绍</a>
+
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=e5974b95a2d0c7bab4346b6ea8c823af&action=category&catid=73&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'73','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                         <ul>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=82">机构项目</a></li>
-                            <li><a style="border:none;" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=83">机构结构</a>
-                            </li>
+                            <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                                <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
+                            <?php $n++;}unset($n); ?>
                         </ul>
+                        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
                     </li>
                     <li><a href="#">国际交流</a>
+
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=014862518820b55478b63090458cdd1b&action=category&catid=12&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'12','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                         <ul>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=74">中欧交流项目</a></li>
-                            <li><a  href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=75">中美交流项目</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=76">中亚交流项目</a></li>
-                            <li><a style="border:none;" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=77">中澳交流项目</a>
-                            </li>
+                            <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                                <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
+                            <?php $n++;}unset($n); ?>
                         </ul>
+                        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
                     </li>
                     <li><a href="#">国际合作</a>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=81c039a698fa4b1e0d93c68a6d75bba8&action=category&catid=13&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'13','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                         <ul>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=22">中外合作办学项目</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=23">一学期交换生项目</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=84">互免学费交换生项目</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=24" style="font-size:12px">2+2/3+1学分互认项目</a>
-                            </li>
-
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=25" style="border:none">3+1+1本硕连读项目</a>
-                            </li>
+                            <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                            <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
+                            <?php $n++;}unset($n); ?>
                         </ul>
+                        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </li>
                     <li><a href="#">港澳台合作</a>
-                        <ul>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=58">短期文化交流项目</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=59">互免学费交换生项目</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=60">一学期研习项目</a></li>
-                            <li><a style="border:none;" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=61">保荐研究生项目</a>
-                            </li>
-                        </ul>
+
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=8bd969f295ccdc5c92583eb942b84cb6&action=category&catid=14&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'14','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                            <ul>
+                                <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                                <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
+                                <?php $n++;}unset($n); ?>
+                            </ul>
+                        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
                     </li>
                     <li><a href="#">国际认证</a>
-                        <ul>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=62">IACBE国际认证</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=63">ABET国际认证</a></li>
-                            <li><a style="border:none;" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=64">IEEE认证</a>
-                            </li>
-                        </ul>
+
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=4c61bd9d8a439258c203d1637907d4a7&action=category&catid=15&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'15','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                            <ul>
+                                <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                                <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
+                                <?php $n++;}unset($n); ?>
+                            </ul>
+                        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
                     </li>
                     <li><a href="#">外教管理</a>
-                        <ul>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=39">外教指南</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=40">聘请流程</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=41">证件办理</a></li>
-                            <li><a style="border:none;" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=42">外教活动</a>
-                            </li>
-                        </ul>
+
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=fbd5d418bdf219587d0c19a5c7d20ec5&action=category&catid=16&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'16','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                            <ul>
+                                <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                                <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
+                                <?php $n++;}unset($n); ?>
+                            </ul>
+                        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+
                     </li>
                     <li><a href="#">来华留学</a>
-                        <ul>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=32">留学类别</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=33">招生信息</a></li>
-                            <li><a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=34">日常管理</a></li>
-                            <li><a style="border:none;" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=35">来华留学生奖学金</a>
-                            </li>
-                        </ul>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=eb2f2a6d1fcec41e75d5204e74be0f3b&action=category&catid=17&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'17','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                            <ul>
+                                <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                                <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
+                                <?php $n++;}unset($n); ?>
+                            </ul>
+                        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </li>
                     <li><a href="#">港澳台招生</a>
-                        <ul>
-                            <li><a style="border:none;" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=65">港澳台招生简介</a>
-                            </li>
-                        </ul>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=b36736b3a076639c40c3e652e0078b99&action=category&catid=18&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'18','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                            <ul>
+                                <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
+                                <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
+                                <?php $n++;}unset($n); ?>
+                            </ul>
+                        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </li>
                 </ul>
             </div>
