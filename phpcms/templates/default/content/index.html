@@ -88,7 +88,7 @@
                 {pc:link  action="type_list" typeid="56" siteid="$siteid" linktype="1" order="listorder DESC" num="8" return="pic_link"}
                     <div id="demo1">
                         {loop $pic_link $v}
-                            <a href="{$v['url']}" target="_blank"><img src="{$v[logo]}" alt="{$v['name']}" /></a>
+                            <a href="{$v['url']}" target="_blank"><img src="{$v[logo]}" width="73" height="61" alt="{$v['name']}" /></a>
                         {/loop}
                     </div>
                 {/pc}
@@ -118,7 +118,9 @@
         {pc:link  action="type_list" typeid="55"  siteid="$siteid" order="listorder DESC" num="20" return="dat"}
         <select class="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
             <option selected="selected">-------友情链接-------</option>
-            <option value="">教育部涉外监管信息网</option>
+            {loop $dat $v}
+                <option value="{$v[url]}">{$v[name]}</option>
+            {/loop}
         </select>
         {/pc}
     </div>

@@ -41,6 +41,23 @@
                 <div class="about">
                     <a title="English" target="_blank" href="http://www.gcu.edu.cn/en/">English</a>
                 </div>
+                <div id="sousuo">
+                    <form action="<?php echo APP_PATH;?>index.php" method="get" target="_blank">
+                        <input type="hidden" name="m" value="search"/>
+                        <input type="hidden" name="c" value="index"/>
+                        <input type="hidden" name="a" value="init"/>
+                        <input type="hidden" name="typeid" value="1" id="typeid"/>
+                        <input type="hidden" name="siteid" value="<?php echo $siteid;?>" id="siteid"/>
+                        <div id="search" style="display:inline-block;">
+                            <input type="text" name="q" id="sousuo-text" placeholder="关键字搜索" style="outline:none;">
+                        </div>
+                        <div style="display:inline-block;">
+                            <input type="submit" id="sousuo-button" value="" />
+                        </div>
+
+                    </form>
+
+                </div>
             </div>
             <!--导航栏开始 -->
             <div id="nav">

@@ -56,11 +56,11 @@
             <span style="width:100px;" class="wai_background4">来华留学奖学金</span>
             <span style="left:100px;" class="wai_tu4"></span>
             <div class="lai_content">
-                <div style="height:60px" class="liuxue3">
+                <div class="liuxue3">
                     <a style="line-height:72px;" title="广东省政府来粤留学生奖学金管理暂行办法" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=show&catid=35&id=21">广东省政府来粤留学生奖学金管理暂行办法</a>
                 </div>
-                <div style="border:none;margin-top:12px;" class="liuxue3">
-                    <a title="" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=show&catid=35&id=22"><p>广东省政府来粤留学生奖学金申请表(一)</p><p>GUANGDONG GOVERNMENT OUTSTANDING INTERNATIONAL STUDENT SCHOLARSHIP APPLICATION FORM</p></a>
+                <div style="border:none;margin-top:20px;" class="liuxue3">
+                    <a title="" href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=show&catid=35&id=22"><p>广东省政府来粤留学生奖学金申请表(一)</p></a>
                 </div>
             </div>
         </div>

@@ -88,7 +88,7 @@
                 <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"link\" data=\"op=link&tag_md5=963adb2d378a8804abd60cd7dbfff7f5&action=type_list&typeid=56&siteid=%24siteid&linktype=1&order=listorder+DESC&num=8&return=pic_link\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$link_tag = pc_base::load_app_class("link_tag", "link");if (method_exists($link_tag, 'type_list')) {$pic_link = $link_tag->type_list(array('typeid'=>'56','siteid'=>$siteid,'linktype'=>'1','order'=>'listorder DESC','limit'=>'8',));}?>
                     <div id="demo1">
                         <?php $n=1;if(is_array($pic_link)) foreach($pic_link AS $v) { ?>
-                            <a href="<?php echo $v['url'];?>" target="_blank"><img src="<?php echo $v['logo'];?>" alt="<?php echo $v['name'];?>" /></a>
+                            <a href="<?php echo $v['url'];?>" target="_blank"><img src="<?php echo $v['logo'];?>" width="73" height="61" alt="<?php echo $v['name'];?>" /></a>
                         <?php $n++;}unset($n); ?>
                     </div>
                 <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
@@ -118,7 +118,9 @@
         <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"link\" data=\"op=link&tag_md5=ac9797e310576764ef81b6245d5c32f2&action=type_list&typeid=55&siteid=%24siteid&order=listorder+DESC&num=20&return=dat\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$link_tag = pc_base::load_app_class("link_tag", "link");if (method_exists($link_tag, 'type_list')) {$dat = $link_tag->type_list(array('typeid'=>'55','siteid'=>$siteid,'order'=>'listorder DESC','limit'=>'20',));}?>
         <select class="select" onchange="top.location.href = this.options[this.selectedIndex].value;">
             <option selected="selected">-------友情链接-------</option>
-            <option value="">教育部涉外监管信息网</option>
+            <?php $n=1;if(is_array($dat)) foreach($dat AS $v) { ?>
+                <option value="<?php echo $v['url'];?>"><?php echo $v['name'];?></option>
+            <?php $n++;}unset($n); ?>
         </select>
         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
     </div>
