@@ -462,12 +462,16 @@ a{
 }
 
 .liu{
+    position:relative;
     width:92px;
     height:82px;
     margin-left:25px;
     float:left;
     background:url(../images/xiao.png);
 }
+
+
+
 
 .content-bottom-lo{
     width:819px;
@@ -873,9 +877,10 @@ a{
 
 .common span{
     display:block;
-    width:179px;
-    height:72px;
+    width:195px;
+    height:90px;
     text-align:center;
+    line-height:90px;
 }
 
 .common span:hover{
@@ -899,9 +904,10 @@ a{
 
 .common2 span{
     display:block;
-    width:179px;
-    height:90px;
+    width:195px;
+    height:100px;
     text-align:center;
+    line-height:100px;
 }
 
 .common3{
@@ -920,9 +926,10 @@ a{
 
 .common3 span{
     display:block;
-    width:360px;
-    height:54px;
+    width:392px;
+    height:80px;
     text-align:center;
+    line-height:80px;
 }
 
 .common2 span:hover{
@@ -942,7 +949,6 @@ a{
 
 .font{
     width:300px;
-    height:145px;
     line-height:29px;
     font-size:14px;
     margin:0 auto;
@@ -1296,8 +1302,8 @@ a{
 #sousuo-text{
     height:20px;
     background:none;
-    border:2px solid #24A3EA;
-    border-radius:5px 0 0 5px;
+    border:2px solid white;
+    border-radius:5px;
     padding:5px;
 }
 #sousuo-button{

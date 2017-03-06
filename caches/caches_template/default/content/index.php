@@ -70,6 +70,30 @@
         </div>
         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
     </div>
+    <script>
+
+
+
+
+
+
+        $(document).ready(function () {
+            $(".liu").stop().mouseover(function () {
+
+                $(".aaa").animate({height:"8px"});
+            }).mouseleave(function () {
+                $(".aaa").stop().animate({height:"0"});
+            });
+
+
+
+
+
+        })
+
+
+
+    </script>
     <div class="content-bottom">
         <a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=87"><div style="margin-left:50px;" class="liu"></div></a>
         <a href="<?php echo APP_PATH;?>index.php?m=content&c=index&a=lists&catid=88"><div style="background-position:-116px 0" class="liu"></div></a>
