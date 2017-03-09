@@ -66,7 +66,7 @@
                     <li>
                         <a href="#">机构介绍</a>
 
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=e5974b95a2d0c7bab4346b6ea8c823af&action=category&catid=73&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'73','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=e5974b95a2d0c7bab4346b6ea8c823af&action=category&catid=73&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'73','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                         <ul>
                             <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                 <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
@@ -77,7 +77,7 @@
                     </li>
                     <li><a href="#">国际交流</a>
 
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=014862518820b55478b63090458cdd1b&action=category&catid=12&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'12','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=014862518820b55478b63090458cdd1b&action=category&catid=12&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'12','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                         <ul>
                             <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                 <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
@@ -87,7 +87,7 @@
 
                     </li>
                     <li><a href="#">国际合作</a>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=81c039a698fa4b1e0d93c68a6d75bba8&action=category&catid=13&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'13','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=81c039a698fa4b1e0d93c68a6d75bba8&action=category&catid=13&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'13','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                         <ul>
                             <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                             <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
@@ -97,7 +97,7 @@
                     </li>
                     <li><a href="#">港澳台合作</a>
 
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=8bd969f295ccdc5c92583eb942b84cb6&action=category&catid=14&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'14','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=8bd969f295ccdc5c92583eb942b84cb6&action=category&catid=14&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'14','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                             <ul>
                                 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                 <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
@@ -108,7 +108,7 @@
                     </li>
                     <li><a href="#">国际认证</a>
 
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=4c61bd9d8a439258c203d1637907d4a7&action=category&catid=15&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'15','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=4c61bd9d8a439258c203d1637907d4a7&action=category&catid=15&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'15','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                             <ul>
                                 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                 <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
@@ -119,7 +119,7 @@
                     </li>
                     <li><a href="#">外教管理</a>
 
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=fbd5d418bdf219587d0c19a5c7d20ec5&action=category&catid=16&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'16','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=fbd5d418bdf219587d0c19a5c7d20ec5&action=category&catid=16&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'16','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                             <ul>
                                 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                 <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
@@ -129,7 +129,7 @@
 
                     </li>
                     <li><a href="#">来华留学</a>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=eb2f2a6d1fcec41e75d5204e74be0f3b&action=category&catid=17&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'17','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=eb2f2a6d1fcec41e75d5204e74be0f3b&action=category&catid=17&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'17','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                             <ul>
                                 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                 <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>
@@ -138,7 +138,7 @@
                         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </li>
                     <li><a href="#">港澳台招生</a>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=b36736b3a076639c40c3e652e0078b99&action=category&catid=18&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'18','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=b36736b3a076639c40c3e652e0078b99&action=category&catid=18&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'18','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                             <ul>
                                 <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                                 <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>

@@ -417,6 +417,11 @@ class category extends admin {
 	 */
 	public function public_cache() {
 		$this->repair();
+
+        //二次开发内容，为了删除不必要的栏目链接
+        $this->db->query("update `v9_category` set `url` = '#' where catid in (73,12,13,14,15,16,17,18)");
+
+
 		$this->cache();
 		showmessage(L('operation_success'),'?m=admin&c=category&a=init&module=admin&menuid=43');
 	}
