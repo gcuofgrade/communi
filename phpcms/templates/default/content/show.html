@@ -8,7 +8,7 @@
             <div id="neirong" style="margin-bottom:20px;">
                 <div class="yi">
                     <div class="shang">
-                        <p>{$title}</p>
+                        <p id="title">{$title}</p>
                         <span>时间：</span><span>{$inputtime}</span>&nbsp;
                         <span>信息来源：</span><span>{$copyfrom}</span>&nbsp;
                         <span>点击：</span><span id="hits"></span>
@@ -17,4 +17,10 @@
                 </div>
             </div>
         </div>
+<script>
+    //修改标题不能回车的问题
+    var title = $("#title").text();
+    $("#title").empty();
+    $("#title").append(title.replace("/\&lt\;/","<"));
+</script>
 {template "content","footer"}

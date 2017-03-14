@@ -41,7 +41,7 @@
             <span class="wai_background3">日常管理</span>
             <span class="wai_tu3"></span>
 
-            {pc:content action="lists" catid="34" num="5" order="inputtime DESC" page="$page"}
+            {pc:content action="lists" catid="34" num="4" order="inputtime DESC" page="$page"}
             <div class="lai_content">
                 {loop $data $r}
                 <div class="liuxue2">
@@ -53,16 +53,19 @@
         </div>
         <div class="waiji">
             <img src="{$CATEGORYS[35][image]}" alt="" />
-            <span style="width:100px;" class="wai_background4">来华留学奖学金</span>
+            <span style="width:100px;" class="wai_background4">学生活动</span>
             <span style="left:100px;" class="wai_tu4"></span>
+
+            {pc:content action="lists" catid="35" num="6" order="inputtime DESC" page="$page"}
             <div class="lai_content">
+                {loop $data $r}
                 <div class="liuxue3">
-                    <a style="line-height:72px;" title="广东省政府来粤留学生奖学金管理暂行办法" href="{APP_PATH}index.php?m=content&c=index&a=show&catid=35&id=21">广东省政府来粤留学生奖学金管理暂行办法</a>
+                    <a href="{$r[url]}">{$r[title]}</a>
                 </div>
-                <div style="border:none;margin-top:20px;" class="liuxue3">
-                    <a title="" href="{APP_PATH}index.php?m=content&c=index&a=show&catid=35&id=22"><p>广东省政府来粤留学生奖学金申请表(一)</p></a>
-                </div>
+                {/loop}
             </div>
+            {/pc}
+
         </div>
 
 

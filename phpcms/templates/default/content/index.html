@@ -61,9 +61,9 @@
             <ul>
             {loop $info $v}
                 <li>
-                    
+
                         <a title="{$v['title']}" href="{$v['url']}"><span class="span_left">{str_cut($v['title'],40)}</span><span class="span_right">{date('Y-m-d',$v[inputtime])}</span></a>
-                   
+
                 </li>
             {/loop}
             </ul>

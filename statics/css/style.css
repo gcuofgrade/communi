@@ -31,13 +31,14 @@ a{
 }
 
 #head{
-    height:96px;
+    height:120px;
     width:100%;
+    background:#42B0EC;
 }
 
 #hr{
     width:2px;
-    height:77px;
+    height:95px;
     float:left;
     margin-top:13px;
     margin-left:20px;
@@ -251,7 +252,7 @@ a{
 .notice{
     width:385px;
     height:450px;
-    float:left;
+    float:right;
     margin-top:30px;
 }
 
@@ -326,7 +327,7 @@ a{
 .news{
     width:410px;
     height:450px;
-    float:right;
+    float:left;
     margin-top:30px;
 }
 
@@ -1102,9 +1103,9 @@ a{
 }
 
 .liuxue2 a{
-    font-size:12px;
+    font-size:14px;
     color:#fff;
-    line-height:18px;
+    line-height:22px;
     font-weight:bolder;
 }
 
@@ -1113,8 +1114,8 @@ a{
 }
 
 .liuxue3{
-    height:72px;
     width:330px;
+    height:30px;
     margin:0 auto;
     border-bottom:1px dashed #fff;
     overflow:hidden;
@@ -1124,9 +1125,9 @@ a{
 }
 
 .liuxue3 a{
-    font-size:15px;
+    font-size:14px;
     color:#fff;
-    line-height:25px;
+    line-height:30px;
     font-weight:bolder;
 }
 
@@ -1262,7 +1263,6 @@ a{
 
 .shang{
     width:513px;
-    height:73px;
     margin:0 auto;
     text-align:center;
     border-bottom:1px solid #a0a0a0;
@@ -1289,8 +1289,8 @@ a{
 /*搜索功能*/
 #sousuo{
     float:right;
-    margin-top:35px;
-    margin-right:20px;
+    margin-top:55px;
+    margin-right:5px;
 }
 /*兼容谷歌内核*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -1300,10 +1300,10 @@ a{
 }
 
 #sousuo-text{
-    height:20px;
+    height:18px;px;
     background:none;
     border:2px solid white;
-    border-radius:5px;
+    border-radius:8px;
     padding:5px;
 }
 #sousuo-button{
@@ -1311,4 +1311,5 @@ a{
     width:32px;
     height:32px;
     background:url("../images/sousuo.svg")no-repeat;
+    cursor:pointer;
 }
