@@ -28,18 +28,28 @@ function inReadBar(){
 //这是为了侧边栏的选中展示
 function readBar(){
 	var num;
-	if (catid > 22 && catid <= 25) {
+	if (catid > 22 && catid <= 25 ) {
+	    //国际合作
 		num = catid - 22;
 	}else if(catid == 22){
+	    //国际合作
 		num = 0;
-	}else if(catid == 20 || catid == 21){
-		num = catid - 20;
 	}else if(catid >= 58 && catid <= 60){
+	    //港澳台合作
 		num = catid - 58;
 	}else if(catid >= 62 && catid <= 64){
+	    //国际认证
 		num = catid - 62; 
 	}else if(catid == 65){
+	    //港澳台招生
 		num = 0;
-	}
+	}else if(catid >= 74 && catid <= 77){
+	    //国际交流
+		num = catid -74;
+	}else if(catid == 84){
+        num = 4;
+    }else if(catid >= 58 && catid <= 61){
+	    num = catid -58;
+    }
 	$(".list_left_a").eq(num).addClass("sideBar_a_acitve");
 }
