@@ -311,7 +311,6 @@ a{
 
 .notice_content a{
     display:block;
-    width:225px;
     white-space:nowrap;
     text-overflow:ellipsis;
     overflow:hidden;
