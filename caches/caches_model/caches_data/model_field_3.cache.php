@@ -78,7 +78,7 @@ return array (
     'tips' => '',
     'css' => 'inputtitle',
     'minlength' => '1',
-    'maxlength' => '80',
+    'maxlength' => '120',
     'pattern' => '',
     'errortips' => '请输入标题',
     'formtype' => 'title',

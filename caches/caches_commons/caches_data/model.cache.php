@@ -61,7 +61,7 @@ return array (
     'default_style' => 'default',
     'category_template' => 'category_picture',
     'list_template' => 'list_picture',
-    'show_template' => 'show_picture',
+    'show_template' => 'show',
     'js_template' => '',
     'admin_list_template' => '',
     'member_add_template' => '',
