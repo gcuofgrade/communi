@@ -6,7 +6,7 @@
                 <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
             </div>
             <div class="list_bottom">
-            {pc:content action="lists" catid="$catid" num="10" order="inputtime DESC" page="$page"}
+            {pc:content action="lists" catid="$catid" num="6" order="listorder DESC" page="$page"}
                 <div class="list_content">
                     {loop $data $r}
                     <a title="{$r[title]}" href="{$r[url]}">
@@ -22,6 +22,7 @@
                         </div>
                     </a>
                     {/loop}
+                    <div class="ye">{$pages}</div>
                 </div>
             {/pc}
             {template "content","listSideBar"}

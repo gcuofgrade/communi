@@ -24,7 +24,7 @@
             <a style="float:right;margin-top:28px;" href=""><img src="{IMG_PATH}more.png" alt="" /></a>
         </div>
         <div class="notice_bottom">
-        {pc:content action="lists" catid="11" num="8" order="inputtime DESC"}
+        {pc:content action="lists" catid="11" num="8" order="listorder DESC"}
             <ul>
             {loop $data $v}
                 <li>
@@ -42,7 +42,7 @@
             <img src="{IMG_PATH}news.png" alt="" />
             <a style="float:right;margin-top:28px;" href=""><img src="{IMG_PATH}more.png" alt="" /></a>
         </div>
-        {pc:content  action="lists" catid="10" order="updatetime DESC" thumb="1" num="1" return="info"}
+        {pc:content  action="lists" catid="10" order="listorder DESC" thumb="1" num="1" return="info"}
         <div class="look">
         {loop $info $v}
             <img src="{thumb($v[thumb],148,98)}" alt="" />
@@ -56,7 +56,7 @@
         </div>
         {/pc}
 
-        {pc:content action="lists" catid="10" num="7" order="id DESC" return="info"}
+        {pc:content action="lists" catid="10" num="7" order="listorder DESC" return="info"}
         <div class="news_bottom">
             <ul>
             {loop $info $v}

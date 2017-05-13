@@ -588,11 +588,9 @@ a{
 
 .list_content{
     float:right;
-    width:552px;
-    max-height:783px;
+    width:612px;
     background:#236fb7;
     position:relative;
-    margin-right:60px;
 }
 
 .list_content a{
@@ -605,7 +603,7 @@ a{
 
 .information{
     height:149px;
-    width:529px;
+    width:589px;
     background:#fff;
     margin:33px auto;
     position:relative;
@@ -645,7 +643,7 @@ a{
 
 .list_more{
     position:absolute;
-    left:445px;
+    right:0;
     top:155px;
     font-size:11px;
     width:100px;
@@ -1137,7 +1135,7 @@ a{
 /*列表页*/
 #list{
     min-height:400px;
-    width:728px;
+    width:808px;
     background:#236fb7;
     margin:42px auto;
     overflow:hidden;
@@ -1145,7 +1143,7 @@ a{
 }
 
 .list_li{
-    width:705px;
+    width:785px;
     min-height:320px;
     border:1px solid #a4c4e1;
     margin-top:12px;
@@ -1158,7 +1156,7 @@ a{
 
 .xi{
     height:36px;
-    width:662px;
+    width:692px;
     margin:0 auto;
     border-bottom:1px solid #a0a0a0;
 }
@@ -1171,7 +1169,7 @@ a{
 }
 
 .shuang{
-    width:662px;
+    width:692px;
     min-height:300px;
     margin:0 auto;
     margin-top:10px;
@@ -1193,7 +1191,7 @@ a{
     display:block;
     float:left;
     height:25px;
-    width:550px;
+    width:600px;
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;

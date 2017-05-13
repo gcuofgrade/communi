@@ -1,6 +1,7 @@
 {template "content","header"}
 <!--main-->
 <div id="content">
+
             <div class="list_top">
                 <img src="{IMG_PATH}home.png" alt="" />
                 <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
@@ -11,7 +12,7 @@
                         <p>{$CATEGORYS[$catid][catname]}</p>
                     </div>
                     <div class="shuang">
-                    {pc:content action="lists" catid="$catid" num="20" order="id DESC" page="$page"}
+                    {pc:content action="lists" catid="$catid" num="20" order="listorder DESC" page="$page"}
                         <ul>
                         {loop $data $r}
                             <li>
