@@ -252,7 +252,7 @@ a{
 .notice{
     width:385px;
     height:450px;
-    float:right;
+    float:left;
     margin-top:30px;
 }
 
@@ -326,7 +326,7 @@ a{
 .news{
     width:410px;
     height:450px;
-    float:left;
+    float:right;
     margin-top:30px;
 }
 
@@ -480,7 +480,7 @@ a{
 }
 
 .partner{
-    width:100px;
+    width:150px;
     height:43px;
     text-align:center;
     line-height:45px;
@@ -549,7 +549,7 @@ a{
 .last{
     margin:0 auto;
     width:760px;
-    font-size:10px;
+    font-size:12px;
     font-weight:bolder;
     color:#deedfb;
 }
@@ -1180,7 +1180,6 @@ a{
     color:#1b1b1b;
     font-size:13px;
     font-family:'微软雅黑';
-    font-weight:bolder;
 }
 
 .shuang a:hover{

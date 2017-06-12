@@ -16,7 +16,7 @@
                         <ul>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                             <li>
-                                <a href="<?php echo $r['url'];?>"><span class='hong'><?php echo $r['title'];?></span><span class='mei'><?php echo date('m-d',$r['inputtime']);?></span></a>
+                                <a href="<?php echo $r['url'];?>"><span class='hong'><?php echo $r['title'];?></span><span class='mei'><?php echo date('Y-m-d',$r['inputtime']);?></span></a>
                             </li>
                         <?php $n++;}unset($n); ?>
                         </ul>

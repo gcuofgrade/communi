@@ -16,7 +16,7 @@
     <script src="<?php echo JS_PATH;?>jquery.scrollTo.js"></script>
     <script src="<?php echo JS_PATH;?>min.js"></script>
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>min.css"/>
-    <title>国际教育交流中心</title>
+    <title>国际教育与交流中心</title>
 </head>
 <body>
 <div id="main_bc">
@@ -64,7 +64,7 @@
                 <ul>
                     <li style="width:55px;"><a href="<?php echo APP_PATH;?>">首页</a></li>
                     <li>
-                        <a href="#">机构介绍</a>
+                        <a href="#">部门介绍</a>
 
                         <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=e5974b95a2d0c7bab4346b6ea8c823af&action=category&catid=73&num=7&siteid=%24siteid&order=listorder+ASC\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'category')) {$data = $content_tag->category(array('catid'=>'73','siteid'=>$siteid,'order'=>'listorder ASC','limit'=>'7',));}?>
                         <ul>

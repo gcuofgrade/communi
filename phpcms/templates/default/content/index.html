@@ -20,11 +20,11 @@
 <div id="content" class="clearfix">
     <div class="notice">
         <div class="top">
-            <img src="{IMG_PATH}notice.png" alt="" />
-            <a style="float:right;margin-top:28px;" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=11"><img src="{IMG_PATH}more.png" alt="" /></a>
+            <img src="{IMG_PATH}news.png" alt="" />
+            <a style="float:right;margin-top:28px;" href="#"><img src="{IMG_PATH}more.png" alt="" /></a>
         </div>
         <div class="notice_bottom">
-        {pc:content action="lists" catid="11" num="8" order="listorder DESC"}
+        {pc:content action="lists" catid="10" num="8" order="listorder DESC"}
             <ul>
             {loop $data $v}
                 <li>
@@ -39,10 +39,10 @@
     </div>
     <div class="news">
         <div class="top">
-            <img src="{IMG_PATH}news.png" alt="" />
-            <a style="float:right;margin-top:28px;" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=10"><img src="{IMG_PATH}more.png" alt="" /></a>
+            <img src="{IMG_PATH}notice.png" alt="" />
+            <a style="float:right;margin-top:28px;" href="#"><img src="{IMG_PATH}more.png" alt="" /></a>
         </div>
-        {pc:content  action="lists" catid="10" order="listorder DESC" thumb="1" num="1" return="info"}
+        {pc:content  action="lists" catid="11" order="listorder DESC" thumb="1" num="1" return="info"}
         <div class="look">
         {loop $info $v}
             <img src="{thumb($v[thumb],148,98)}" alt="" />
@@ -56,7 +56,7 @@
         </div>
         {/pc}
 
-        {pc:content action="lists" catid="10" num="7" order="listorder DESC" return="info"}
+        {pc:content action="lists" catid="11" num="7" order="listorder DESC" return="info"}
         <div class="news_bottom">
             <ul>
             {loop $info $v}
@@ -80,7 +80,7 @@
     </div>
     <div class="content-bottom-lo">
         <div class="partner">
-            <p>合作院校</p>
+            <p>国（境）合作院校</p>
         </div>
 
         <div id="demo">

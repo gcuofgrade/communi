@@ -16,7 +16,7 @@
                         <ul>
                         {loop $data $r}
                             <li>
-                                <a href="{$r[url]}"><span class='hong'>{$r[title]}</span><span class='mei'>{date('m-d',$r['inputtime'])}</span></a>
+                                <a href="{$r[url]}"><span class='hong'>{$r[title]}</span><span class='mei'>{date('Y-m-d',$r['inputtime'])}</span></a>
                             </li>
                         {/loop}
                         </ul>
