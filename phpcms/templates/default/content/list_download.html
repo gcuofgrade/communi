@@ -1,12 +1,12 @@
 {template "content","header"}
 <div id="content">
     <div class="list_top">
-        <img src="{IMG_PATH}home.png" alt="" />
+        <img src="{IMG_PATH}home.png" alt=""/>
         <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
     </div>
-    <div class="list_bottom clearfix" >
+    <div class="list_bottom clearfix">
         <div style="margin-top:0" class="waiji">
-            <img src="{$CATEGORYS[32][image]}" alt="" />
+            <img src="{$CATEGORYS[32][image]}" alt=""/>
             <span class="wai_background">留学类别</span>
             <span class="wai_tu"></span>
 
@@ -21,8 +21,8 @@
             {/pc}
 
         </div>
-        <div class="waiji" >
-            <img src="{$CATEGORYS[33][image]}" alt="" />
+        <div class="waiji">
+            <img src="{$CATEGORYS[33][image]}" alt=""/>
             <span class="wai_background2">招生信息</span>
             <span class="wai_tu2"></span>
 
@@ -36,8 +36,8 @@
             </div>
             {/pc}
         </div>
-        <div class="waiji" >
-            <img src="{$CATEGORYS[34][image]}" alt="" />
+        <div class="waiji">
+            <img src="{$CATEGORYS[34][image]}" alt=""/>
             <span class="wai_background3">日常管理</span>
             <span class="wai_tu3"></span>
 
@@ -52,7 +52,7 @@
             {/pc}
         </div>
         <div class="waiji">
-            <img src="{$CATEGORYS[35][image]}" alt="" />
+            <img src="{$CATEGORYS[35][image]}" alt=""/>
             <span style="width:100px;" class="wai_background4">学生活动</span>
             <span style="left:100px;" class="wai_tu4"></span>
 
@@ -85,7 +85,7 @@
 </div>
 
 <script>
-    $(function(){
+    $(function () {
 
         inReadBar();
 
@@ -95,12 +95,17 @@
             //alert("aaa");
             //outReadBar();
         });
-        
+
         $(".list_left_a").click(function(){
             var index = $(".list_left_a").index(this);
             $(".list_left_a").removeClass("sideBar_a_acitve");
             $(".box-shadow").removeClass("box-shadow");
             $(".waiji").eq(index).addClass("box-shadow");
+
+            //跳到那个节点
+            var dom = $(".waiji").eq(index);
+            $.scrollTo(dom,2000);
+
             $(".list_left_a").eq(index).addClass("sideBar_a_acitve");
         })
     });

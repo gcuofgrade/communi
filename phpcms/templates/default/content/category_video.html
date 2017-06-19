@@ -1,117 +1,120 @@
 {template "content","header"}
 <!--content开始 -->
-        
-        <div id="content" class="clearfix">
-            <div class="list_top">
-                <img src="{IMG_PATH}home.png" alt="" />
-                <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
+
+<div id="content" class="clearfix">
+    <div class="list_top">
+        <img src="{IMG_PATH}home.png" alt=""/>
+        <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
+    </div>
+    <div class="list_bottom">
+        <div style="margin-top:0" class="waiji">
+            <img src="{$CATEGORYS[39][image]}" alt=""/>
+            <span class="wai_background">{$CATEGORYS[39][catname]}</span>
+            <span class="wai_tu"></span>
+            <div style="border-top:none;border-left:none;" class="common">
+                <a title="外教风采" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=85"><span>外教风采</span></a>
             </div>
-            <div class="list_bottom">
-                <div style="margin-top:0" class="waiji">
-                    <img src="{$CATEGORYS[39][image]}" alt="" />
-                    <span class="wai_background">外教情况介绍</span>
-                    <span class="wai_tu"></span>
-                    <div style="border-top:none;border-left:none;" class="common">
-                        <a title="外教风采" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=85"><span>外教风采</span></a>
-                    </div>
-                    <div style="border-top:none;border-right:none;" class="common">
-                        <a title="规章制度" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=96"><span>规章制度</span></a>
-                    </div>
-                    <div style="border-top:none;border-left:none;" class="common">
-                        <a title="荣誉奖励" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=97"><span>荣誉奖励</span></a>
-                    </div>
-                    <div style="border-top:none;border-right:none;" class="common">
-                        <a title="招聘信息" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=98"><span>招聘信息</span></a>
-                    </div>
-                </div>
-                <div class="waiji" >
-                    <img src="{$CATEGORYS[40][image]}" alt="" />
-                    <span class="wai_background2">外教聘用程序</span>
-                    <span class="wai_tu2"></span>
-                    <div style="border-top:none;border-left:none;" class="common">
-                        <a title="外教风采" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=99"><span>长期外教专家聘用流程</span></a>
-                    </div>
-                    <div style="border-top:none;border-right:none;" class="common">
-                        <a title="长期外籍专家聘用流程" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=100"><span>证件办理</span></a>
-                    </div>
-                    <div style="border-top:none;border-left:none;" class="common">
-                        <a title="短期外籍专家聘用流程" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=101"><span>短期外教专家聘用流程</span></a>
-                    </div>
-                    <div style="border-top:none;border-right:none;" class="common">
-                        <a title="入职&离职" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=102"><span>入职&离职</span></a>
-                    </div>
-                </div>
-                <div class="waiji" >
-                    <img src="{$CATEGORYS[41][image]}" alt="" />
-                    <span class="wai_background">外教服务指南</span>
-                    <span class="wai_tu"></span>
-                    <div style="border-top:none;border-left:none;" class="common2">
-                        <a title="来华前" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=103"><span>来华前</span></a>
-                    </div>
-                    <div style="border-top:none;border-right:none;" class="common2">
-                        <a title="来校后" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=104"><span>来校后</span></a>
-                    </div>
-                    <div class="common3">
-                        <a title="外教指南" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=105"><span>外教指南</span></a>
-                    </div>
-                </div>
-                <div class="waiji">
-                    <img src="{$CATEGORYS[42][image]}" alt="" />
-                    <span class="wai_background2">外教活动</span>
-                    <span class="wai_tu2"></span>
-                    <div class="wai_size">
-                        {pc:content action="lists" catid="42" num="10" order="inputtime DESC" page="$page"}
-                        <div class="font">
-                        	{loop $data $r}
-                            <div class="qu">
-                                <a title="{$r[catname]}" href="{$r[url]}">{$r[title]}</a>
-                            </div> 
-                            {/loop}
-                        </div>
-                    {/pc}
-                    </div>
-                </div>
-
-                <!--some special to sideBar-->
-                {pc:content action="category" catid="$top_parentid" num="25" siteid="$siteid" order="listorder ASC"}
-				<div class="list_left">
-				    <ul>
-				    <?php $i = 0?>
-				    {loop $data $r}
-				        <li><a class="list_left_a" href="#"><span class="lo">{$r[catname]}</span></a></li>
-				    {/loop}
-				    </ul>
-				</div>
-				{/pc}
-
-
-                <!--for the box-shadow-->
-                <script>
-                    $(function(){
-
-                        outReadBar();
-
-                        $(".list_left_a").mouseover(function(){
-                            $(".list_left_a").removeClass("sideBar_a_acitve");
-                        }).mouseout(function(){
-                            //alert("aaa");
-                            //outReadBar();
-                        });
-                        
-                        $(".list_left_a").click(function(){
-                            var index = $(".list_left_a").index(this);
-                            $(".list_left_a").removeClass("sideBar_a_acitve");
-                            $(".box-shadow").removeClass("box-shadow");
-                            $(".waiji").eq(index).addClass("box-shadow");
-
-                            //跳到那个节点
-                            var dom = $(".waiji").eq(index);
-                            $.scrollTo(dom,300);
-
-                            $(".list_left_a").eq(index).addClass("sideBar_a_acitve");
-                        })
-                    });
-                </script>
+            <div style="border-top:none;border-right:none;" class="common">
+                <a title="规章制度" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=96"><span>规章制度</span></a>
+            </div>
+            <div style="border-top:none;border-left:none;" class="common">
+                <a title="荣誉奖励" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=97"><span>荣誉奖励</span></a>
+            </div>
+            <div style="border-top:none;border-right:none;" class="common">
+                <a title="招聘信息" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=98"><span>招聘信息</span></a>
             </div>
         </div>
+        <div class="waiji">
+            <img src="{$CATEGORYS[40][image]}" alt=""/>
+            <span class="wai_background2">{$CATEGORYS[40][catname]}</span>
+            <span class="wai_tu2"></span>
+            <div style="border-top:none;border-left:none;" class="common">
+                <a title="外教风采"
+                   href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=99"><span>长期外教专家聘用流程</span></a>
+            </div>
+            <div style="border-top:none;border-right:none;" class="common">
+                <a title="长期外籍专家聘用流程"
+                   href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=100"><span>证件办理</span></a>
+            </div>
+            <div style="border-top:none;border-left:none;" class="common">
+                <a title="短期外籍专家聘用流程"
+                   href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=101"><span>短期外教专家聘用流程</span></a>
+            </div>
+            <div style="border-top:none;border-right:none;" class="common">
+                <a title="入职&离职" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=102"><span>入职&离职</span></a>
+            </div>
+        </div>
+        <div class="waiji">
+            <img src="{$CATEGORYS[41][image]}" alt=""/>
+            <span class="wai_background">{$CATEGORYS[41][catname]}</span>
+            <span class="wai_tu"></span>
+            <div style="border-top:none;border-left:none;" class="common2">
+                <a title="来华前" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=103"><span>来华前</span></a>
+            </div>
+            <div style="border-top:none;border-right:none;" class="common2">
+                <a title="来校后" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=104"><span>来校后</span></a>
+            </div>
+            <div class="common3">
+                <a title="外教指南" href="{APP_PATH}index.php?m=content&c=index&a=lists&catid=105"><span>外教指南</span></a>
+            </div>
+        </div>
+        <div class="waiji">
+            <img src="{$CATEGORYS[42][image]}" alt=""/>
+            <span class="wai_background2">{$CATEGORYS[42][catname]}</span>
+            <span class="wai_tu2"></span>
+            <div class="wai_size">
+                {pc:content action="lists" catid="42" num="10" order="inputtime DESC" page="$page"}
+                <div class="font">
+                    {loop $data $r}
+                    <div class="qu">
+                        <a title="{$r[catname]}" href="{$r[url]}">{$r[title]}</a>
+                    </div>
+                    {/loop}
+                </div>
+                {/pc}
+            </div>
+        </div>
+
+        <!--some special to sideBar-->
+        {pc:content action="category" catid="$top_parentid" num="25" siteid="$siteid" order="listorder ASC"}
+        <div class="list_left">
+            <ul>
+                <?php $i = 0?>
+                {loop $data $r}
+                <li><a class="list_left_a" href="#"><span class="lo">{$r[catname]}</span></a></li>
+                {/loop}
+            </ul>
+        </div>
+        {/pc}
+
+
+        <!--for the box-shadow-->
+        <script>
+            $(function () {
+
+                outReadBar();
+
+                $(".list_left_a").mouseover(function () {
+                    $(".list_left_a").removeClass("sideBar_a_acitve");
+                }).mouseout(function () {
+                    //alert("aaa");
+                    //outReadBar();
+                });
+
+                $(".list_left_a").click(function () {
+                    var index = $(".list_left_a").index(this);
+                    $(".list_left_a").removeClass("sideBar_a_acitve");
+                    $(".box-shadow").removeClass("box-shadow");
+                    $(".waiji").eq(index).addClass("box-shadow");
+
+                    //跳到那个节点
+                    var dom = $(".waiji").eq(index);
+                    $.scrollTo(dom, 2000);
+
+                    $(".list_left_a").eq(index).addClass("sideBar_a_acitve");
+                })
+            });
+        </script>
+    </div>
+</div>
 {template "content","footer"}

@@ -22,13 +22,14 @@ caches/configs/database.php
 将删除 .idea/modules.xml
 将删除 .idea/siee.iml
 将删除 .idea/workspace.xml
-	caches/caches_commons/caches_data/category_content.cache.php
-	caches/caches_commons/caches_data/category_content_1.cache.php
-	caches/caches_template/default/content/category_video.php
-	caches/caches_template/default/content/list.php
-	caches/error_log.php
-	index.html
-
+caches/caches_commons/
+caches/caches_model/caches_data/
+.idea
+caches/error_log.php
+caches/caches_template/default/
+caches/caches_search/caches_data/
+caches/index.html
+index.html
 
 将删除 caches/caches_commons/caches_data/category_content.cache.php
 将删除 caches/caches_commons/caches_data/category_content_1.cache.php

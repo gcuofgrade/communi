@@ -4,18 +4,40 @@
     margin:0;
     padding:0;
     list-style-type:none;
-    font-family:'Times New Roman','Microsoft YaHei',SimHei;
+    font-family:'Times New Roman', 'Microsoft YaHei', SimHei;
 }
 
 a, img{
     border:0;
 }
+
 body{
     background:#F1F8FB;
 }
+
 a{
     text-decoration:none;
 }
+
+input::-webkit-input-placeholder{
+    /*谷歌*/
+    color:#fff;
+}
+input::-moz-placeholder{
+    /*火狐19+*/
+    color:#fff;
+}
+input:-moz-placeholder{
+    /*火狐4到8*/
+    color:#fff;
+}
+input:-ms-input-placeholder{
+    /*ie10+*/
+    color:#fff;
+}
+
+
+/* www.hi-docs.com/css.html */
 
 #preloader{
     /* Images you want to preload*/
@@ -122,8 +144,8 @@ a{
     width:130px;
     border-right:none;
 
-
 }
+
 #nav ul li ul li:not(:last-child) a{
     border-bottom:1px solid #fcf5f5;
 }
@@ -283,7 +305,7 @@ a{
     display:block;
     font-size:12px;
     text-align:center;
-    width:87px;
+    width:67px;
     height:20px;
     float:left;
     margin-top:15px;
@@ -302,10 +324,10 @@ a{
 }
 
 .notice_content{
-    width:255px;
+    width:287px;
     display:block;
     float:left;
-    margin-left:20px;
+    margin-left:8px;
     margin-top:15px;
 }
 
@@ -470,9 +492,6 @@ a{
     background:url(../images/xiao.png);
 }
 
-
-
-
 .content-bottom-lo{
     width:819px;
     height:110px;
@@ -480,7 +499,7 @@ a{
 }
 
 .partner{
-    width:150px;
+    width:170px;
     height:43px;
     text-align:center;
     line-height:45px;
@@ -502,6 +521,7 @@ a{
     float:left;
     width:800%;
 }
+
 #indemo img{
     margin-left:15px;
 }
@@ -538,6 +558,7 @@ a{
 .select option{
     text-align:center;
 }
+
 #foot{
     height:50px;
     width:100%;
@@ -1085,8 +1106,9 @@ a{
 .liuxue a:hover{
     text-decoration:underline;
 }
+
 .liuxue a p:first-child{
-    margin-top: 8px;
+    margin-top:8px;
 }
 
 .liuxue2{
@@ -1247,6 +1269,12 @@ a{
     padding:12px;
 }
 
+#neirong_second{
+    min-height:674px;
+    background:#236fb7;
+    padding:12px;
+}
+
 .yi{
     width:703px;
     min-height:651px;
@@ -1255,6 +1283,17 @@ a{
     margin-left:12px;
     margin-top:12px;
     overflow:hidden;
+}
+
+.er{
+    width:563px;
+    min-height:651px;
+    background:#fff;
+    border-bottom:1px solid #a0a0a0;
+    margin-left:12px;
+    margin-top:12px;
+    overflow:hidden;
+
 }
 
 .shang{
@@ -1282,14 +1321,21 @@ a{
     margin:12px auto;
 }
 
+.cou_second{
+    min-height:550px;
+    margin:12px auto;
+    padding:0 12px;
+}
+
 /*搜索功能*/
 #sousuo{
     float:right;
     margin-top:55px;
     margin-right:5px;
 }
+
 /*兼容谷歌内核*/
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio:0){
     #search{
         overflow:hidden;
     }
@@ -1302,10 +1348,11 @@ a{
     color:white;
     padding:5px;
 }
+
 #sousuo-button{
     border:none;
     width:32px;
     height:32px;
-    background:url("../images/sousuo.svg")no-repeat;
+    background:url("../images/sousuo.svg") no-repeat;
     cursor:pointer;
 }

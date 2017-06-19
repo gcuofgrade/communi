@@ -1,0 +1,30 @@
+{template "content","header"}
+<!--main-->
+<div id="content" class="clearfix">
+    <div class="list_top">
+        <img src="{IMG_PATH}home.png" alt=""/>
+        <span><a href="{APP_PATH}">首页 &gt;</a><a href="">{catpos($catid)}列表</a></span>
+    </div>
+    <div class="list_bottom">
+        <div class="list_content">
+
+            <div id="neirong_second" style="margin-bottom:20px;">
+                <div class="er">
+                    <div class="shang">
+                        <p>{$title}</p>
+                    </div>
+                    <div class="cou_second">{$content}</div>
+                </div>
+            </div>
+
+
+        </div>
+        {template "content","listSideBar"}
+    </div>
+</div>
+<script>
+    $(function () {
+        readBar();
+    })
+</script>
+{template "content","footer"}
